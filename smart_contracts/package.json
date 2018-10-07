@@ -1,7 +1,6 @@
 {
   "name": "smart_contracts",
   "version": "1.0.0",
-  "description": "",
   "main": "truffle-config.js",
   "directories": {
     "test": "test"
@@ -14,5 +13,6 @@
   "license": "ISC",
   "dependencies": {
     "openzeppelin-solidity": "2.0.0-rc.1"
-  }
+  },
+  "description": ""
 }
