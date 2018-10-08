@@ -71,4 +71,8 @@ contract StarNotary is ERC721 {
     function generateStarHash(string _ra, string _dec, string _mag) private pure returns(bytes32) {
         return keccak256(abi.encodePacked(_ra, _dec, _mag));
     }
+
+    function mint(uint256 _tokenId) public {
+        super._mint(msg.sender, _tokenId);
+    }
 }
