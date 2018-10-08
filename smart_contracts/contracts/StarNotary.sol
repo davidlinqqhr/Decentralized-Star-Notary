@@ -75,4 +75,8 @@ contract StarNotary is ERC721 {
     function mint(uint256 _tokenId) public {
         super._mint(msg.sender, _tokenId);
     }
+
+    function starsForSale(uint256 _tokenId) public view returns(uint256){
+        return starsForSale[_tokenId];
+    }
 }
